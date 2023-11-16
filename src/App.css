@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+.container {
+  margin: auto;
+  max-width: 800px;
+  min-width: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculatorBlock {
+  padding: 5px 10px 5px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alert {
+  background-color: #D4E157;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contents {
+  background-color: white;
+  padding: 10px;
+}
+
+.contents-top {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.spending { 
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1;
+  color: rgb(249, 190, 101);
+  font-weight: bold;
+}
+.spending-input, .cost-input {
+  border: none;
+  border-bottom: 1px solid rgb(220, 168, 90);
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+
+}
+.cost { 
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  color: rgb(249, 190, 101);
+  font-weight: bold;
+}
+
+.submit {
+  margin: 10px;
+  padding: 10px;
+  background-color: olivedrab;
   color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.submit:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.contents-middle {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  /* -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+}
+.list:hover {
+  /* -webkit-transform: scale(1.1);
+	transform: scale(1.1); */
+  box-shadow: 0 10px 10px -5px darkgray;
+  transition: .3s ease-in-out;
+}
+.right {
+  margin-right: 20%;
+}
+.middle {
+  color: darkgray;
+}
+.editBtn { 
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.deleteBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.listdeleteBtn {
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  background-color: olivedrab;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.listdeleteBtn:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
 }
